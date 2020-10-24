@@ -5,8 +5,14 @@ const port = process.env.PORT || 3000
 let phones = [
     { id: 1, name:'iPhone12 Pro Max'},
     { id: 2, name:'Google Pixel 5'}
-  ]
-
+]
+let items = [
+    { id: 1, name:'iPhone12 Pro Max'},
+    { id: 2, name:'Google Pixel 5'}
+]
+app.get('/items', (req, res) => {
+    return res.json(items)
+})
 app.get('/list', (req, res) => {
     res.json(phones)
 })
