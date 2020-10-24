@@ -3,7 +3,7 @@ const { request } = require('https')
 
 describe('Validate setting the test', () => {
     it('should be ok', () => {
-        assert.ok(false)
+        assert.ok(true)
     })
 describe('GET "/"', () =>{
     it('respond with hello!', (done) =>{
