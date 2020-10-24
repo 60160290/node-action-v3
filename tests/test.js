@@ -1,5 +1,6 @@
 const assert = require('assert')
-const { request } = require('https')
+const request = require('supertest')
+const app = require('../index')
 
 describe('Validate setting the test', () => {
     it('should be ok', () => {
@@ -7,7 +8,7 @@ describe('Validate setting the test', () => {
     })
 describe('GET "/"', () =>{
     it('respond with hello!', (done) =>{
-        request(app).getHeader('/'.expect('Hello!', done))
+        request(app).get('/').expect('Hello!', done)
     })
 })
 })
