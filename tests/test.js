@@ -2,10 +2,6 @@ const assert = require('assert')
 const request = require('supertest')
 const app = require('../index')
 
-describe('Validate setting the test', () => {
-    it('should be ok', () => {
-        assert.ok(true)
-    })
 describe('GET "/"', () =>{
     it('respond with hello!', (done) =>{
         request(app).get('/').expect('Hello!', done)
@@ -20,4 +16,3 @@ describe('GET "/items"', () =>{
         request(app).get('/items').expect(want, done)
         })
     })
-})
