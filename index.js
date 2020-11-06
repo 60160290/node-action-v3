@@ -16,7 +16,7 @@ app.get('/items', (req, res) => {
 // app.get('/list', (req, res) => {
 //     res.json(phones)
 // })
-
+// a
 app.get('/:id', (req, res) => {
     let id = req.params.id
     res.json(phones[id-1])
