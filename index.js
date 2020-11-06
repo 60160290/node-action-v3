@@ -31,10 +31,3 @@ app.listen(port, () => {
 })
 
 module.exports = app
-
-// Exercise
-// GET /items
-// [
-//     { id: 1. name:'iPhone12 Pro Max'}
-//     { id: 2. name:'Google Pixel 5'}
-// ]
