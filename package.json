@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./tests/* --exit",
-    "unit-test": "mocha ./tests/unit.js --exit",
-    "unit test": "mocha ./tests/unit --exit"
+    "unit-test": "mocha ./tests/unit.js --exit"
   },
   "keywords": [],
   "author": "",
